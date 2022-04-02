@@ -245,8 +245,6 @@ namespace Zenta.Core.Runtime.Managers
 
             var listeners = FindObjectsOfType<MonoBehaviour>().OfType<IGameStateListener>().ToArray();
 
-            Debug.Log($"Dispatching state change event to {listeners.Length} objects");
-
             for (int i = 0; i < listeners.Length; i++)
             {
                 listeners[i].OnGameStateChanged(temp, state);

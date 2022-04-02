@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: GameConfig
   m_EditorClassIdentifier: 
   LevelsPath: Levels
-  GameUI: {fileID: 8625158393567285710, guid: 25047e2b69510fc479bc3246d5c961f0, type: 3}
+  GameUI: {fileID: 8625158393567285710, guid: 24efdfaf62710fe429c210dd61e7b63b, type: 3}
   LoadingScene: 1
-  LevelsVariable: {fileID: 11400000, guid: 2b30b79c6ec7b8847ab75d21867ecc38, type: 2}
+  LevelsVariable: {fileID: 11400000, guid: 8f6e70ec2d718a249a42150d068f0cc1, type: 2}
   LevelLabelPrefix: Level
   GameStateProtection: 0
   RequiredLevelObjects: []

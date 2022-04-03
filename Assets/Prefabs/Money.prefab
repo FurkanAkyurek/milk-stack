@@ -106,7 +106,7 @@ Transform:
   m_GameObject: {fileID: 7944326006543498173}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 29.723}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.8}
   m_Children:
   - {fileID: 1346481016717180262}
   - {fileID: 2052766281492839047}
@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11a9b872b8d3e7c43879c6e911cb9969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moneyPrefab: {fileID: 2052766281492581291}
 --- !u!1001 &7944326004718471720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -212,6 +213,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47434f5b7c154974594d6c06328d081e, type: 3}
+--- !u!1 &2052766281492581291 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8233440381529178499, guid: 47434f5b7c154974594d6c06328d081e,
+    type: 3}
+  m_PrefabInstance: {fileID: 7944326004718471720}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2052766281492839047 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8233440381528912047, guid: 47434f5b7c154974594d6c06328d081e,

@@ -65,7 +65,6 @@ public class PlayerMovement : MonoBehaviour, IGameStateListener
 
                 transform.position = new Vector3(Mathf.Clamp(transform.position.x + (delta.x * sensitivity), moveClamp.x, moveClamp.y), transform.position.y, transform.position.z);
             }
-
         }
     }
 }

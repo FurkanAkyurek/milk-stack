@@ -13,7 +13,7 @@ namespace Zenta.Core.Editor
         private static string companyGame;
         private static string productName;
 
-        [MenuItem("Zenta/Editor")]
+        [MenuItem("FH/Editor")]
         public static void ZentaEditorWindow()
         {
             Initialize();

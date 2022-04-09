@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Collectible"))
         {
-            AddMoney(other.gameObject.GetComponent<Collectible>());
+            AddBottle(other.gameObject.GetComponent<Collectible>());
 
            if (bottles.Count > 1)
             {
@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
                 other.transform.position = bottleStacks.transform.position;
             }
 
-            other.transform.DOScale(.75f, .25f);
+            other.transform.DOScale(.85f, .25f);
         }
         if (other.gameObject.CompareTag("Money"))
         {
@@ -57,29 +57,25 @@ public class PlayerController : MonoBehaviour
 
             Destroy(other.gameObject);
         }
-        if (other.gameObject.CompareTag("Obstacle"))
-        {
+    }
 
+    public bool IsContains(Collectible bottle)
+    {
+        return bottles.Contains(bottle);
+    }
+
+    public void AddBottle(Collectible bottle)
+    {
+        if (!IsContains(bottle))
+        {
+            bottles.Add(bottle);
         }
     }
-
-    public bool IsContains(Collectible money)
+    public void RemoveBottle(Collectible bottle)
     {
-        return bottles.Contains(money);
-    }
-
-    public void AddMoney(Collectible money)
-    {
-        if (!IsContains(money))
+        if (IsContains(bottle))
         {
-            bottles.Add(money);
-        }
-    }
-    public void RemoveMoney(Collectible money)
-    {
-        if (IsContains(money))
-        {
-            bottles.Remove(money);
+            bottles.Remove(bottle);
         }
     }
 }

@@ -10,14 +10,14 @@ namespace Zenta.Core.Runtime
         {
             GameManager manager = new GameObject("GameManager").AddComponent<GameManager>();
 
-            Debug.Log("GameManager Initialized");
+            //Debug.Log("GameManager Initialized");
 
             manager.OnStateChanged += OnGameStateChanged;
         }
 
         private static void OnGameStateChanged(GameState from, GameState to)
         {
-            Debug.Log($"GameState changed from {from} to {to}");
+            //Debug.Log($"GameState changed from {from} to {to}");
         }
     }
 }

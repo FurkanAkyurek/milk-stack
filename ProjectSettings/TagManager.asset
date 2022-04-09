@@ -10,6 +10,7 @@ TagManager:
   - Obstacle
   - Capping
   - Stuffing
+  - FinishStep
   layers:
   - Default
   - TransparentFX

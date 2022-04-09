@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenta.Core.Runtime.Managers;
 
 public class Collectible : MonoBehaviour
 {
@@ -12,7 +13,14 @@ public class Collectible : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Obstacle"))
         {
+            PlayerController.Instance.RemoveBottle(this.gameObject.GetComponent<Collectible>());
 
+            Destroy(this.gameObject);
+
+            if(PlayerController.Instance.Bottles.Count <= 0)
+            {
+                GameManager.Instance.FailLevel();
+            }
         }
         if (other.gameObject.CompareTag("Capping"))
         {
@@ -25,10 +33,6 @@ public class Collectible : MonoBehaviour
         if (other.gameObject.CompareTag("Pasteurizer"))
         {
             TransformPasteurizeBottle();
-        }
-        if (other.CompareTag("Finish"))
-        {
-
         }
     }
     void TransformStuffingBottle()

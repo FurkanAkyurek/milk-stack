@@ -19,7 +19,6 @@ public class PlayerMovement : MonoBehaviour, IGameStateListener
     private Vector3 mousePos;
     private Vector3 delta;
 
-
     public SplineFollower splineFollower;
 
     #region Singleton

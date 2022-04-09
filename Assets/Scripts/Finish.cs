@@ -10,8 +10,6 @@ public class Finish : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player arrived finish.");
-
             PlayerMovement.Instance.splineFollower.speed += .5f;
 
             Vector3 tempPosition = other.transform.position;
@@ -25,12 +23,10 @@ public class Finish : MonoBehaviour
                 if (stepCount > i)
                 {
                     finishSteps[i].isPassable = true;
-                    Debug.Log(finishSteps[i].name + " : Açık");
                 }
                 else
                 {
                     finishSteps[i].isPassable = false;
-                    Debug.Log(finishSteps[i].name + " : Kapalı");
                 }
             }
         }

@@ -76,7 +76,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   splines:
   - {fileID: 0}
-  speed: 5
+  speed: 6
   speedUnit: 0
   followerBehaviour: 0
   customStartPosition: 0
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveClamp: {x: -1.7, y: 1.7}
-  speed: 5
+  speed: 6
   sensitivity: 0.01
   splineFollower: {fileID: 3297121647301616359}
 --- !u!114 &1529981368417760390

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c37fef1cb28ebd4d996cd9393cbfd7e, type: 3}
   m_Name: Level_2
   m_EditorClassIdentifier: 
-  level: 0
-  prefab: {fileID: 5372165244091430480, guid: 9039c7ce0815bd74db21a9fe50db14b8, type: 3}
+  level: 2
+  prefab: {fileID: 5693252496430204253, guid: e1240b717c5939041846f40714e94c74, type: 3}
   scene: 2
   preview: {fileID: 0}

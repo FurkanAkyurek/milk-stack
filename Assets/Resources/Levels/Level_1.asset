@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Level_1
   m_EditorClassIdentifier: 
   level: 1
-  prefab: {fileID: 8505171901874821878, guid: dc136be9a25f83e48aaed86d31bbd701, type: 3}
+  prefab: {fileID: 4388089290989087602, guid: 323c0cdc690393a4cbc7ff86a123f0ae, type: 3}
   scene: 2
   preview: {fileID: 0}
